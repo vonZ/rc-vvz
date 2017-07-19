@@ -39,7 +39,7 @@ class PasswordInput extends React.Component {
         {
           showVisibilityToggle &&
           <a
-            href="#"
+            href="#bla"
             onClick={this.toggleShowPassword}
             style={{ marginLeft: 5 }}>
             <EyeIcon />
