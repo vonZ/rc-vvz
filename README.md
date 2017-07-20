@@ -7,4 +7,4 @@ A library with re-usable react components
 npm install vvz-react
 ```
 # Docs
-[Component documentation] (http://vonz.github.io/rc-vvz)
+[Component documentation](http://vonz.github.io/rc-vvz)
