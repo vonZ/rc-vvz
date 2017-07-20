@@ -60,6 +60,9 @@ typings/
 # dependencies
 /node_modules
 
+# built component library
+/lib
+
 # testing
 /coverage
 
