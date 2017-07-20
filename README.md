@@ -11,7 +11,7 @@ Update the docs:
 ```
 predeploy:docs then deploy:docs
 ```
-Publsh new to npm:
+Publish new to npm:
 ```
 prepublish then inside lib-folder: npm publish
 ```
