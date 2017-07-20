@@ -44,14 +44,17 @@
     "webpack-manifest-plugin": "1.1.0",
     "whatwg-fetch": "2.0.3"
   },
+  "homepage": "http://vonz.github.io/rc-vvz/",
   "scripts": {
     "prestart": "npm run gen:docs",
     "start": "npm-run-all --parallel start:docs gen:docs-watch",
     "start:docs": "node scripts/start.js",
     "gen:docs": "node scripts/generateComponentData.js",
     "gen:docs-watch": "npm run gen:docs -- --watch",
-    "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "build:docs": "node scripts/build.js",
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy:docs": "npm run build:docs",
+    "deploy:docs": "gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -96,6 +99,7 @@
   "devDependencies": {
     "chokidar": "^1.6.1",
     "enzyme": "^2.8.2",
+    "gh-pages": "^0.12.0",
     "npm-run-all": "^4.0.2",
     "react-addons-test-utils": "^15.5.1",
     "react-docgen": "^2.14.0",
